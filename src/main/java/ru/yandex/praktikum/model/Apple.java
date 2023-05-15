@@ -7,11 +7,10 @@ import static ru.yandex.praktikum.model.constants.Discount.DISCOUNT_FOR_ALL;
 import static ru.yandex.praktikum.model.constants.Discount.DISCOUNT_FOR_RED_APPLE;
 
 public class Apple extends Food {
-    private String color;
+    private final String color;
 
     public Apple(Integer amount, Double price, String color) {
-        super(amount, price);
-        this.isVegetarian = true;
+        super(amount, price, true);
         this.color = color;
     }
 
